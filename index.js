@@ -1,1 +1,793 @@
-const _0x52d54a=_0x54ef;(function(_0x4b9f2b,_0x5935a7){const _0x343b08=_0x54ef,_0x51c9f2=_0x4b9f2b();while(!![]){try{const _0x237252=-parseInt(_0x343b08(0x188))/0x1*(parseInt(_0x343b08(0x187))/0x2)+-parseInt(_0x343b08(0x19a))/0x3+parseInt(_0x343b08(0xfa))/0x4*(-parseInt(_0x343b08(0x161))/0x5)+-parseInt(_0x343b08(0x1c9))/0x6*(parseInt(_0x343b08(0x19d))/0x7)+parseInt(_0x343b08(0x166))/0x8+parseInt(_0x343b08(0xfb))/0x9*(parseInt(_0x343b08(0x14b))/0xa)+-parseInt(_0x343b08(0x102))/0xb*(-parseInt(_0x343b08(0x120))/0xc);if(_0x237252===_0x5935a7)break;else _0x51c9f2['push'](_0x51c9f2['shift']());}catch(_0x67dbfb){_0x51c9f2['push'](_0x51c9f2['shift']());}}}(_0x1268,0xf02be),console[_0x52d54a(0x16b)](process[_0x52d54a(0x1c3)]));const Discord=require(_0x52d54a(0x1b6)),Client=new Discord[(_0x52d54a(0x12f))]({'intents':0x7fff,'partials':[_0x52d54a(0x1bb),_0x52d54a(0x101),'GUILD_MEMBER',_0x52d54a(0x1cd)],'allowedMentions':['']}),config=require(_0x52d54a(0x154)),Axios=require(_0x52d54a(0x119)),Paginator=require(_0x52d54a(0x13e)),DisTube=require('distube'),Voice=require('@discordjs/voice'),Errorhandler=require('discord-error-handler');function _0x54ef(_0x383c4f,_0x5c1d81){const _0x126853=_0x1268();return _0x54ef=function(_0x54efc9,_0x197083){_0x54efc9=_0x54efc9-0xfa;let _0x3cedf8=_0x126853[_0x54efc9];return _0x3cedf8;},_0x54ef(_0x383c4f,_0x5c1d81);}process['on']('TypeError',_0x331fb3=>{const _0xea2d84=_0x52d54a;console[_0xea2d84(0x16b)](_0x331fb3);});const Lyrics=require(_0x52d54a(0x116)),Music=new DisTube[(_0x52d54a(0x1c8))](Client,{'leaveOnEmpty':![],'emptyCooldown':0x0,'leaveOnFinish':![],'leaveOnStop':!![]}),errorbed=new Discord['MessageEmbed']()['setColor'](_0x52d54a(0x17f))['setDescription']('**An\x20Error\x20Occured!\x20Please\x20try\x20again**'),help$={'name':_0x52d54a(0xfe),'description':_0x52d54a(0x160)},play$={'name':_0x52d54a(0x132),'description':'Play\x20A\x20Song'},pause$={'name':_0x52d54a(0x15a),'description':_0x52d54a(0x18e)},resume$={'name':'resume','description':_0x52d54a(0x1a2)},volume$={'name':'volume','description':_0x52d54a(0x151)},skip$={'name':'skip','description':_0x52d54a(0x11a)},filter$={'name':_0x52d54a(0x1b7),'description':'Add\x20Song\x20Filter','options':[{'name':_0x52d54a(0x1b7),'description':_0x52d54a(0x12d),'required':!![],'type':'STRING','choices':[{'name':'3d','value':'3d'},{'name':'nightcore','value':_0x52d54a(0x18b)},{'name':_0x52d54a(0x108),'value':_0x52d54a(0x108)},{'name':'echo','value':'echo'},{'name':_0x52d54a(0x16d),'value':_0x52d54a(0x16d)},{'name':'vaporwave','value':_0x52d54a(0x12b)},{'name':'flanger','value':'flanger'},{'name':'reverse','value':_0x52d54a(0x145)},{'name':_0x52d54a(0x190),'value':_0x52d54a(0x190)},{'name':_0x52d54a(0x19f),'value':'tremolo'}]}]},queue$={'name':'queue','description':_0x52d54a(0x11e)},stop$={'name':_0x52d54a(0x195),'description':_0x52d54a(0x15c)},shuffle$={'name':_0x52d54a(0x12c),'description':_0x52d54a(0x15f)},panel$={'name':_0x52d54a(0x1a4),'description':_0x52d54a(0x123)},lyrics$={'name':_0x52d54a(0x10a),'description':_0x52d54a(0x197),'options':[{'name':'name','description':_0x52d54a(0x1c5),'required':!![],'type':'STRING'},{'name':_0x52d54a(0x1e4),'description':_0x52d54a(0x16f),'required':!![],'type':_0x52d54a(0x164)}]},grab$={'name':'grab','description':_0x52d54a(0x1cb)};function _0x1268(){const _0x36cb1e=['stop','toString','See\x20song\x20lyrics','status12','lodash','857646vyVRIM','status3','MessageButton','10024ZdiZhR','setEmoji','tremolo','Page:\x20','substring','Resume\x20Song','\x20Is\x20Online\x20🚀','panel','songs','update','code\x20by\x20Nishant#8044','ne22','addSong','Music\x20Commands','LINK','url','**Skipped\x20current\x20Song**','```','send','ownerId','startsWith','status9','refresh','playSong','playing','discord.js','filter','formattedDuration','queue','\x0a```','CHANNEL','Not\x20Found!','Current\x20Queue\x20of\x20songs','messageCreate','**Music\x20Stopped**','getQueue','n90','setVolume','version','volume','What\x20is\x20the\x20name\x20of\x20the\x20song','setAuthor','setThumbnail','default','7764rBldQj','`↪\x20Save\x20song\x20to\x20DM`','Save\x20this\x20song\x20to\x20your\x20DMs','stop2','REACTION','join','\x20\x20\x20\x20\x20|\x20\x20\x20\x20Dislikes\x20:\x20','remove','name','Check\x20your\x20DMs','\x0a\x20Paused?\x20:\x20','`↪\x20Shuffle\x20Queue`','dislikes','grab','**To\x20play\x20a\x20song,\x20type\x20its\x20name\x20below**','createReactionCollector','push','For','setTitle','vol_up','Added\x20To\x20Queue','then','setFooter','first','displayAvatarURL','isCommand','user','author','`↪\x20Get\x20Song\x20lyrics`','mentions','2405220jQHlQj','27KgWGDd','addComponents','ready','help','%**','MessageActionRow','USER','32989wQFsug','setDisabled','`↪\x20Sets\x20Song\x20Volume`','Duration','\x0a\x20The\x20music\x20was\x20stopped\x20by\x20','member','karaoke','edit','lyrics','idle','error','Thanks\x20for\x20using\x20','GUILD_TEXT','setColor','skip','tag','button','Requestor','song','status8','lyrics-finder','Please\x20play\x20music\x20before\x20running\x20this\x20command','Refreshed\x20the\x20panel','axios','Skip\x20Song','About\x20Me','status10','**Music\x20Control\x20Panel**\x20\x0a\x20Volume\x20:\x20','See\x20Songs\x20Queue','commands','7464bHOLWu','includes','`↪\x20Resumes\x20A\x20Song`','Music\x20Control\x20Panel','setStyle','Page\x201/2','resume','PRIMARY','MessageEmbed','n2234','reply','vaporwave','shuffle','The\x20Filter\x20To\x20Set','guild','Client','replace','voice','play','Welcome\x20to\x20','Guild\x20Invite','Music\x20Stopped','addField','Likes\x20:\x20','followUp','options','**Shuffled\x20Songs\x20Queue**','TOKEN','set','slice','@koenie06/discord.js-pagination','LISTENING','thumbnail','emoji','SUCCESS','status7','https://discord.com/oauth2/authorize?client_id=','reverse','vol_down','status6','\x0aThis\x20is\x20an\x20amazing\x20music\x20bot,\x20created\x20for\x20listening\x20to\x20high\x20quality\x20music!\x20It\x20has\x20multiple\x20commands\x20and\x20can\x20even\x20play\x20in\x20STAGE\x20channels!\x0a\x0aOwner\x20:\x20','collect','guildCreate','1297790aJpUWx','commandName','`↪\x20Song\x20Control\x20Panel`','paused','type','setStatus','Set\x20Song\x20Volume','Guild\x20Owner','setCustomId','./config.json','**Music\x20playing\x20right\x20now\x20is\x20paused**','textChannel','DANGER','username','length','pause','`↪\x20Add\x20Song\x20Filter`','Stop\x20Music','setURL','Guild\x20Name','Shuffle\x20Queue\x20Songs','Need\x20Some\x20Help?','5PsycdH','**Volume:\x20','Next','STRING','get','13221680yeIrje','createMessageCollector','map','setDescription','setActivity','log','150','bassboost','https://cdn.discordapp.com/attachments/873161348694048780/892310990056747028/855561346087387136.gif','What\x20is\x20the\x20name\x20of\x20the\x20song\x20author','`↪\x20Plays\x20A\x20Song`','`↪\x20Pauses\x20A\x20Song`','users','guildjoinlog','&permissions=8&scope=bot%20applications.commands','getString','Now\x20Playing\x20-\x20','`↪\x20Stop\x20Music`','customId','🚀\x20','SECONDARY','bot','cache','```js\x0a','createMessageComponentCollector','RANDOM','n24442','channels','setFilter','content','application','status11','Page\x202/2','366976kMXDQq','1USlhxb','Log:\x20Refreshed,\x20by\x20','Previous','nightcore','channel','LYRICS\x20PANEL\x20OPENED','Pause\x20Song','setLabel','phaser','react','`↪\x20Skip\x20A\x20Song`','RED','Log:\x20Queue\x20Shuffled'];_0x1268=function(){return _0x36cb1e;};return _0x1268();}Client['on'](_0x52d54a(0xfd),async()=>{const _0x37a257=_0x52d54a,_0x550e89=[''+config['status1'],''+config['status2'],''+config[_0x37a257(0x19b)],''+config['status4'],''+config['status5'],''+config[_0x37a257(0x147)],''+config[_0x37a257(0x143)],''+config[_0x37a257(0x115)],''+config[_0x37a257(0x1b2)],''+config[_0x37a257(0x11c)],''+config[_0x37a257(0x185)],_0x37a257(0x1a7),''+config[_0x37a257(0x198)]];let _0x3cc61b=0x0;setInterval(()=>Client['user'][_0x37a257(0x16a)](''+_0x550e89[_0x3cc61b++%_0x550e89[_0x37a257(0x159)]],{'type':_0x37a257(0x13f)}),0x2328),Client[_0x37a257(0x184)][_0x37a257(0x11f)][_0x37a257(0x13c)]([help$,play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]),Client[_0x37a257(0x1e3)][_0x37a257(0x150)](_0x37a257(0x10b)),console[_0x37a257(0x16b)](_0x37a257(0x179)+Client[_0x37a257(0x1e3)][_0x37a257(0x158)]+_0x37a257(0x1a3));}),Client['on'](_0x52d54a(0x14a),async _0xbadea4=>{const _0xa8d5a3=_0x52d54a;_0xbadea4[_0xa8d5a3(0x181)]['cache'][_0xa8d5a3(0x1b7)](_0x48e1b5=>_0x48e1b5[_0xa8d5a3(0x14f)]===_0xa8d5a3(0x10e))[_0xa8d5a3(0x1e0)]()['createInvite']()[_0xa8d5a3(0x1de)](_0x28b675=>{const _0xc5339=_0xa8d5a3,_0x2a6329=new Discord[(_0xc5339(0x128))]()['setColor'](_0xc5339(0x17f))['addField'](_0xc5339(0x15e),_0xc5339(0x1ae)+_0xbadea4[_0xc5339(0x1d1)]+_0xc5339(0x1ae),!![])[_0xc5339(0x136)]('Guild\x20ID',_0xc5339(0x1ae)+_0xbadea4['id']+_0xc5339(0x1ae),!![])[_0xc5339(0x136)](_0xc5339(0x152),'```'+Client[_0xc5339(0x172)][_0xc5339(0x17c)][_0xc5339(0x165)](_0xbadea4['ownerId'])[_0xc5339(0x111)]+_0xc5339(0x1ae),!![])[_0xc5339(0x136)](_0xc5339(0x134),'[Click\x20Here]('+_0x28b675[_0xc5339(0x1ac)]+')',!![]);Client[_0xc5339(0x181)]['cache'][_0xc5339(0x165)](config[_0xc5339(0x173)])[_0xc5339(0x1af)]({'embeds':[_0x2a6329]});});}),Client['on'](_0x52d54a(0x1be),async _0x3fa32b=>{const _0xc23f25=_0x52d54a,_0x2c513e=Client[_0xc23f25(0x172)][_0xc23f25(0x17c)][_0xc23f25(0x165)](config[_0xc23f25(0x1b0)]);if(_0x3fa32b[_0xc23f25(0x1e4)][_0xc23f25(0x17b)])return;if(_0x3fa32b[_0xc23f25(0x1e6)][_0xc23f25(0x172)]['first']()===Client[_0xc23f25(0x1e3)]){const _0x3a9935=new Discord[(_0xc23f25(0x100))]()[_0xc23f25(0xfc)](new Discord[(_0xc23f25(0x19c))]()['setStyle'](_0xc23f25(0x1ab))['setURL'](_0xc23f25(0x144)+Client[_0xc23f25(0x1e3)]['id']+_0xc23f25(0x174))['setLabel']('Invite\x20Me')),_0x5b5db0=new Discord[(_0xc23f25(0x128))]()['setColor']('RANDOM')[_0xc23f25(0x1db)](_0xc23f25(0x11b))['setAuthor'](''+Client[_0xc23f25(0x1e3)]['username'],Client[_0xc23f25(0x1e3)][_0xc23f25(0x1e1)]({'size':0x400,'dynamic':!![]}))[_0xc23f25(0x169)](Client[_0xc23f25(0x1e3)][_0xc23f25(0x158)]+'\x20is\x20a\x20high\x20quality\x20Music\x20bot.\x0aUse\x20**/help**\x20to\x20get\x20started\x0a\x0aThis\x20bot\x27s\x20owner\x20is\x20'+_0x2c513e[_0xc23f25(0x158)]);_0x3fa32b['reply']({'embeds':[_0x5b5db0],'components':[_0x3a9935]});}if(!_0x3fa32b['author']['id']===_0x2c513e['id'])return;if(_0x3fa32b['author']['id']===_0x2c513e['id']){if(_0x3fa32b[_0xc23f25(0x183)][_0xc23f25(0x1b1)]('e\x20')){const _0x256360=_0x3fa32b[_0xc23f25(0x183)][_0xc23f25(0x130)]('e\x20','');try{let _0x1734a7=eval(_0x256360);const _0x153512=new Discord['MessageEmbed']()[_0xc23f25(0x10f)]('RANDOM')[_0xc23f25(0x169)](_0xc23f25(0x17d)+_0x1734a7+_0xc23f25(0x1ba));_0x3fa32b[_0xc23f25(0x12a)]({'embeds':[_0x153512]});}catch(_0x16688f){const _0x3f5233=new Discord[(_0xc23f25(0x128))]()[_0xc23f25(0x10f)](_0xc23f25(0x17f))[_0xc23f25(0x169)](_0xc23f25(0x17d)+_0x16688f+_0xc23f25(0x1ba));_0x3fa32b['reply']({'embeds':[_0x3f5233]});}}}else return;}),Client['on']('interactionCreate',async _0x5ae95e=>{const _0x48dfbb=_0x52d54a,_0x4bdcf9=Client[_0x48dfbb(0x172)][_0x48dfbb(0x17c)]['get'](config[_0x48dfbb(0x1b0)]);if(_0x5ae95e[_0x48dfbb(0x1e2)]()){if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0xfe)){const _0x20b5ff=new Discord[(_0x48dfbb(0x128))]()['setColor']('RANDOM')[_0x48dfbb(0x1db)](_0x48dfbb(0x133)+Client[_0x48dfbb(0x1e3)][_0x48dfbb(0x158)]+(_0x48dfbb(0x148)+_0x4bdcf9[_0x48dfbb(0x158)]+'\x0aBot\x20Code\x20Creator\x20:\x20Nishant#8044\x0aBot\x20Code\x20:\x20GITHUB\x20REPO\x20URL'))[_0x48dfbb(0x1df)](_0x48dfbb(0x125)),_0x2ea4d2=new Discord['MessageEmbed']()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))[_0x48dfbb(0x1db)](_0x48dfbb(0x1aa))[_0x48dfbb(0x136)](_0x48dfbb(0x132),_0x48dfbb(0x170),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x15a),_0x48dfbb(0x171),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x126),_0x48dfbb(0x122),!![])[_0x48dfbb(0x136)]('volume',_0x48dfbb(0x104),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x110),_0x48dfbb(0x192),!![])['addField']('filter',_0x48dfbb(0x15b),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x1b9),'`↪\x20See\x20Songs\x20Queue`',!![])['addField'](_0x48dfbb(0x12c),_0x48dfbb(0x1d4),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x1a4),_0x48dfbb(0x14d),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x1d6),_0x48dfbb(0x1ca),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x10a),_0x48dfbb(0x1e5),!![])[_0x48dfbb(0x136)](_0x48dfbb(0x195),_0x48dfbb(0x177),!![])[_0x48dfbb(0x1df)](_0x48dfbb(0x186));Paginator[_0x48dfbb(0x112)]({'interaction':_0x5ae95e,'pages':[_0x20b5ff,_0x2ea4d2],'buttons':{'previous':{'label':_0x48dfbb(0x18a),'style':_0x48dfbb(0x127),'emoji':'👈'},'next':{'label':_0x48dfbb(0x163),'style':_0x48dfbb(0x127),'emoji':'👉'},'stop':{'label':'Stop','style':_0x48dfbb(0x157),'emoji':'✋'}}});}if(_0x5ae95e[_0x48dfbb(0x14c)]==='grab'){let _0x19901d=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0x19901d)_0x5ae95e[_0x48dfbb(0x12a)]({'content':'Please\x20play\x20music\x20before\x20running\x20this\x20command','ephemeral':!![]});else{const _0x1d7b37=new Discord['MessageEmbed']()[_0x48dfbb(0x1db)](''+_0x19901d['songs'][0x0]['name'])[_0x48dfbb(0x136)]('Duration',''+_0x19901d[_0x48dfbb(0x1a5)][0x0][_0x48dfbb(0x1b8)],!![])[_0x48dfbb(0x136)]('Views',''+_0x19901d[_0x48dfbb(0x1a5)][0x0]['views'],!![])[_0x48dfbb(0x136)]('ID',''+_0x19901d[_0x48dfbb(0x1a5)][0x0]['id'],!![])[_0x48dfbb(0x1df)](_0x48dfbb(0x137)+_0x19901d[_0x48dfbb(0x1a5)][0x0]['likes']+_0x48dfbb(0x1cf)+_0x19901d[_0x48dfbb(0x1a5)][0x0][_0x48dfbb(0x1d5)])[_0x48dfbb(0x15d)](''+_0x19901d[_0x48dfbb(0x1a5)][0x0]['url'])[_0x48dfbb(0x1c7)](''+_0x19901d['songs'][0x0]['thumbnail'])[_0x48dfbb(0x10f)]('RANDOM');_0x5ae95e[_0x48dfbb(0x12a)]({'content':_0x48dfbb(0x1d2),'ephemeral':!![]}),_0x5ae95e[_0x48dfbb(0x1e3)][_0x48dfbb(0x1af)]({'embeds':[_0x1d7b37]});}}if(_0x5ae95e[_0x48dfbb(0x14c)]==='play'){if(!_0x5ae95e['member']['voice']['channel'])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});try{const _0x21a6b6=new Discord[(_0x48dfbb(0x128))]()['setColor']('RANDOM')[_0x48dfbb(0x169)](_0x48dfbb(0x1d7));_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x21a6b6]});const _0x4df2fd=_0x4a50c2=>_0x4a50c2[_0x48dfbb(0x107)]['id']===_0x5ae95e[_0x48dfbb(0x107)]['id'],_0xcd00ec=_0x5ae95e['channel'][_0x48dfbb(0x167)]({'filter':_0x4df2fd,'time':0x3a98});_0xcd00ec['on'](_0x48dfbb(0x149),async _0x25af53=>{const _0x422797=_0x48dfbb;if(!_0x25af53[_0x422797(0x107)][_0x422797(0x131)][_0x422797(0x18c)])return;Music[_0x422797(0x132)](_0x25af53,_0x25af53[_0x422797(0x183)]),_0xcd00ec['stop']();});}catch(_0x489a20){return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});}}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x15a)){let _0xe36868=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0xe36868)_0x5ae95e[_0x48dfbb(0x138)]({'content':'Please\x20play\x20music\x20before\x20running\x20this\x20command','ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e['guild']['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)]['voice']['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(_0xe36868[_0x48dfbb(0x14e)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});else{Music[_0x48dfbb(0x15a)](_0x5ae95e);const _0x5a363f=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)]('RANDOM')[_0x48dfbb(0x169)](_0x48dfbb(0x155));_0x5ae95e['reply']({'embeds':[_0x5a363f]});}}if(_0x5ae95e['commandName']===_0x48dfbb(0x126)){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e['guild']['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)]['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)]['channel'])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});let _0x2c9d46=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0x2c9d46)_0x5ae95e[_0x48dfbb(0x138)]({'content':_0x48dfbb(0x117),'ephemeral':!![]});if(_0x2c9d46[_0x48dfbb(0x14e)]){Music['resume'](_0x5ae95e);const _0x264ab6=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))[_0x48dfbb(0x169)]('**Music\x20playing\x20right\x20now\x20is\x20Resumed**');_0x5ae95e['reply']({'embeds':[_0x264ab6]});}else return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});}if(_0x5ae95e[_0x48dfbb(0x14c)]==='lyrics'){const _0x2a8bd1=require(_0x48dfbb(0x199));let _0x3ca7c8=[];_0x5ae95e['reply']({'content':_0x48dfbb(0x18d),'ephemeral':!![]});let _0x3f1e73=0x0,_0x10f949=Music[_0x48dfbb(0x1c0)](_0x5ae95e),_0xfa9d0b=_0x5ae95e[_0x48dfbb(0x139)][_0x48dfbb(0x175)](_0x48dfbb(0x114)),_0x497df6=_0x5ae95e[_0x48dfbb(0x139)][_0x48dfbb(0x175)](_0x48dfbb(0x1e4)),_0x5d78f9=await Lyrics(_0x497df6,_0xfa9d0b)||_0x48dfbb(0x1bc);for(let _0x19ee66=0x0;_0x19ee66<_0x5d78f9[_0x48dfbb(0x159)];_0x19ee66+=0x800){let _0xbc89=_0x5d78f9[_0x48dfbb(0x1a1)](_0x19ee66,Math['min'](_0x5d78f9[_0x48dfbb(0x159)],_0x19ee66+0x7d0)),_0x56badd=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x169)](_0xbc89);_0x3ca7c8[_0x48dfbb(0x1d9)](_0x56badd);}const _0x250633=(_0x33ed9a,_0x3f3f25)=>['⬅️','➡️'][_0x48dfbb(0x121)](_0x33ed9a['emoji'][_0x48dfbb(0x1d1)])&&_0x5ae95e['user']['id']==_0x3f3f25['id'];let _0x2354bd=await _0x5ae95e[_0x48dfbb(0x18c)][_0x48dfbb(0x1af)]({'content':_0x48dfbb(0x1a0)+(_0x3f1e73+0x1)+'/'+_0x3ca7c8[_0x48dfbb(0x159)],'embeds':[_0x3ca7c8[_0x3f1e73]]});await _0x2354bd[_0x48dfbb(0x191)]('🇱'),await _0x2354bd[_0x48dfbb(0x191)]('🇾'),await _0x2354bd['react']('🇷'),await _0x2354bd[_0x48dfbb(0x191)]('🇮'),await _0x2354bd[_0x48dfbb(0x191)]('🇨'),await _0x2354bd[_0x48dfbb(0x191)]('🇸'),await _0x2354bd[_0x48dfbb(0x191)]('🇸'),await _0x2354bd[_0x48dfbb(0x191)]('⬅️'),await _0x2354bd['react']('➡️'),await _0x2354bd['react']('➡️'),await _0x2354bd[_0x48dfbb(0x191)]('❌'),await _0x2354bd[_0x48dfbb(0x191)]('❌');let _0x537bc3=_0x2354bd[_0x48dfbb(0x1d8)](_0x250633);_0x537bc3['on'](_0x48dfbb(0x149),(_0x202935,_0x44b4f2)=>{const _0x2c0b90=_0x48dfbb;_0x202935[_0x2c0b90(0x172)][_0x2c0b90(0x1d0)](_0x202935[_0x2c0b90(0x172)]['cache'][_0x2c0b90(0x165)](_0x5ae95e['user']['id']));if(_0x202935[_0x2c0b90(0x141)][_0x2c0b90(0x1d1)]=='➡️')_0x3f1e73<_0x3ca7c8[_0x2c0b90(0x159)]-0x1&&(_0x3f1e73+=0x1,_0x2354bd[_0x2c0b90(0x109)]({'content':_0x2c0b90(0x1a0)+(_0x3f1e73+0x1)+'/'+_0x3ca7c8[_0x2c0b90(0x159)],'embeds':[_0x3ca7c8[_0x3f1e73]]}));else{if(_0x202935[_0x2c0b90(0x141)][_0x2c0b90(0x1d1)]==='⬅️')_0x3f1e73!==0x0&&(_0x3f1e73-=0x1,_0x2354bd[_0x2c0b90(0x109)]({'content':_0x2c0b90(0x1a0)+(_0x3f1e73+0x1)+'/'+_0x3ca7c8['length'],'embeds':[_0x3ca7c8[_0x3f1e73]]}));else _0x202935[_0x2c0b90(0x141)][_0x2c0b90(0x1d1)]==='❌'&&(_0x3f1e73-=0x1,_0x2354bd['edit']({'content':'Closed\x20LYRICS\x20panel','embeds':[]}));}});}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x1c4)){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me']['voice']['channel'])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e['member'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)]===_0x5ae95e['guild']['me']['voice'][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});let _0x2a9afe=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0x2a9afe)_0x5ae95e[_0x48dfbb(0x138)]({'content':_0x48dfbb(0x117),'ephemeral':!![]});const _0x2e27a8=new Discord[(_0x48dfbb(0x100))]()[_0x48dfbb(0xfc)](new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x146))[_0x48dfbb(0x124)](_0x48dfbb(0x127))['setEmoji']('🔈'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x1dc))[_0x48dfbb(0x124)]('PRIMARY')[_0x48dfbb(0x19e)]('🔊')),_0xfd4b74=new Discord[(_0x48dfbb(0x128))]()['setColor'](_0x48dfbb(0x17f))['setDescription'](_0x48dfbb(0x162)+_0x2a9afe[_0x48dfbb(0x1c4)]+_0x48dfbb(0xff));_0x5ae95e['reply']({'embeds':[_0xfd4b74],'components':[_0x2e27a8]});const _0x407ca1=_0xa7e29c=>_0xa7e29c[_0x48dfbb(0x107)]['id']===_0x5ae95e[_0x48dfbb(0x107)]['id'],_0x5ddf4b=_0x5ae95e[_0x48dfbb(0x18c)][_0x48dfbb(0x17e)]({'filter':_0x407ca1,'time':0x61a80});_0x5ddf4b['on'](_0x48dfbb(0x149),async _0x5b976b=>{const _0x4ea1e2=_0x48dfbb;if(!_0x5b976b[_0x4ea1e2(0x107)][_0x4ea1e2(0x131)][_0x4ea1e2(0x18c)])return _0x5b976b['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5b976b[_0x4ea1e2(0x12e)]['me']['voice'][_0x4ea1e2(0x18c)])return _0x5b976b[_0x4ea1e2(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5b976b['member']['voice'][_0x4ea1e2(0x18c)]===_0x5ae95e[_0x4ea1e2(0x12e)]['me']['voice'][_0x4ea1e2(0x18c)])return _0x5b976b[_0x4ea1e2(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(_0x5b976b[_0x4ea1e2(0x178)]===_0x4ea1e2(0x1dc)){let _0x1329cd=Music[_0x4ea1e2(0x1c0)](_0x5b976b);if(_0x1329cd[_0x4ea1e2(0x1c4)][_0x4ea1e2(0x196)]()['startsWith'](_0x4ea1e2(0x16c)))return _0x5b976b[_0x4ea1e2(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music['setVolume'](_0x5b976b,_0x1329cd['volume']+0x5);let _0x281663=Music[_0x4ea1e2(0x1c0)](_0x5b976b);const _0x34f477=new Discord[(_0x4ea1e2(0x128))]()['setColor'](_0x4ea1e2(0x17f))[_0x4ea1e2(0x169)]('**Volume:\x20'+_0x281663['volume']+_0x4ea1e2(0xff));await _0x5b976b[_0x4ea1e2(0x1a6)]({'embeds':[_0x34f477]});}if(_0x5b976b[_0x4ea1e2(0x178)]===_0x4ea1e2(0x146)){let _0x350775=Music['getQueue'](_0x5b976b);if(_0x350775[_0x4ea1e2(0x1c4)]<0x5)return _0x5b976b[_0x4ea1e2(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music[_0x4ea1e2(0x1c2)](_0x5b976b,_0x350775['volume']-0x5);let _0x4a8917=Music[_0x4ea1e2(0x1c0)](_0x5b976b);const _0x291dae=new Discord[(_0x4ea1e2(0x128))]()[_0x4ea1e2(0x10f)](_0x4ea1e2(0x17f))[_0x4ea1e2(0x169)](_0x4ea1e2(0x162)+_0x4a8917['volume']+_0x4ea1e2(0xff));await _0x5b976b['update']({'embeds':[_0x291dae]});}});}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x1a4)){if(!_0x5ae95e[_0x48dfbb(0x107)]['voice'][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)]['voice'][_0x48dfbb(0x18c)]===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});let _0x1dc956=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0x1dc956)_0x5ae95e[_0x48dfbb(0x138)]({'content':'Please\x20play\x20music\x20before\x20running\x20this\x20command','ephemeral':!![]});const _0x2d149d=new Discord[(_0x48dfbb(0x100))]()['addComponents'](new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)]('n1')[_0x48dfbb(0x124)](_0x48dfbb(0x17a))['setLabel']('​')[_0x48dfbb(0x103)](),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x146))[_0x48dfbb(0x124)](_0x48dfbb(0x127))['setEmoji']('🔈'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x1dc))[_0x48dfbb(0x124)]('PRIMARY')[_0x48dfbb(0x19e)]('🔊'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)]('n8')['setStyle'](_0x48dfbb(0x17a))['setLabel']('​')[_0x48dfbb(0x103)]()),_0x76b598=new Discord[(_0x48dfbb(0x100))]()[_0x48dfbb(0xfc)](new Discord[(_0x48dfbb(0x19c))]()['setCustomId']('n4')[_0x48dfbb(0x124)](_0x48dfbb(0x17a))['setLabel']('​')[_0x48dfbb(0x103)](),new Discord['MessageButton']()[_0x48dfbb(0x153)](_0x48dfbb(0x15a))['setStyle'](0x4)[_0x48dfbb(0x19e)]('⏸️'),new Discord[(_0x48dfbb(0x19c))]()['setCustomId']('play')['setStyle'](_0x48dfbb(0x142))[_0x48dfbb(0x19e)]('▶️'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)]('n2')[_0x48dfbb(0x124)](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('​')[_0x48dfbb(0x103)]()),_0xeccf7f=new Discord[(_0x48dfbb(0x100))]()[_0x48dfbb(0xfc)](new Discord['MessageButton']()[_0x48dfbb(0x153)](_0x48dfbb(0x1a8))['setStyle'](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('Thanks')[_0x48dfbb(0x103)](),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x129))['setStyle'](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)](_0x48dfbb(0x1da))['setDisabled'](),new Discord[(_0x48dfbb(0x19c))]()['setCustomId']('n2324')['setStyle'](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('Using')[_0x48dfbb(0x103)](),new Discord['MessageButton']()[_0x48dfbb(0x153)](_0x48dfbb(0x180))[_0x48dfbb(0x124)](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)](''+Client[_0x48dfbb(0x1e3)]['username'])['setDisabled']()),_0x32b33a=new Discord[(_0x48dfbb(0x100))]()[_0x48dfbb(0xfc)](new Discord[(_0x48dfbb(0x19c))]()['setCustomId']('n3')['setStyle'](_0x48dfbb(0x17a))['setLabel']('​')[_0x48dfbb(0x103)](),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x110))[_0x48dfbb(0x124)](0x2)[_0x48dfbb(0x19e)]('⏩'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)](_0x48dfbb(0x12c))[_0x48dfbb(0x124)](0x2)[_0x48dfbb(0x19e)]('🔃'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)]('n5')['setStyle'](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('​')[_0x48dfbb(0x103)]()),_0x8eb0da=new Discord[(_0x48dfbb(0x100))]()[_0x48dfbb(0xfc)](new Discord['MessageButton']()[_0x48dfbb(0x153)](_0x48dfbb(0x1c1))[_0x48dfbb(0x124)](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('​')[_0x48dfbb(0x103)](),new Discord[(_0x48dfbb(0x19c))]()['setCustomId'](_0x48dfbb(0x1cc))[_0x48dfbb(0x124)](0x4)[_0x48dfbb(0x19e)]('🛑'),new Discord[(_0x48dfbb(0x19c))]()[_0x48dfbb(0x153)]('refresh')[_0x48dfbb(0x124)](_0x48dfbb(0x142))[_0x48dfbb(0x19e)]('🔄'),new Discord['MessageButton']()[_0x48dfbb(0x153)]('n524')['setStyle'](_0x48dfbb(0x17a))[_0x48dfbb(0x18f)]('​')[_0x48dfbb(0x103)]()),_0x73e9c=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))['setTitle'](_0x48dfbb(0x176)+_0x1dc956['songs'][0x0][_0x48dfbb(0x1d1)])[_0x48dfbb(0x169)]('**Music\x20Control\x20Panel**\x20\x0a\x20Volume\x20:\x20'+_0x1dc956[_0x48dfbb(0x1c4)]+_0x48dfbb(0x1d3)+_0x1dc956[_0x48dfbb(0x14e)]);_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x73e9c],'components':[_0x2d149d,_0x76b598,_0x32b33a,_0x8eb0da]});const _0x34d964=_0x4b4348=>_0x4b4348[_0x48dfbb(0x107)]['id']===_0x5ae95e['member']['id'],_0x2fd6a4=_0x5ae95e[_0x48dfbb(0x18c)][_0x48dfbb(0x17e)]({'filter':_0x34d964,'time':0x61a80});_0x2fd6a4['on']('collect',async _0x10e056=>{const _0x3be34e=_0x48dfbb;if(!_0x10e056[_0x3be34e(0x107)][_0x3be34e(0x131)]['channel'])return _0x10e056['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x10e056[_0x3be34e(0x12e)]['me'][_0x3be34e(0x131)][_0x3be34e(0x18c)])return _0x10e056[_0x3be34e(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x10e056[_0x3be34e(0x107)][_0x3be34e(0x131)][_0x3be34e(0x18c)]===_0x5ae95e[_0x3be34e(0x12e)]['me'][_0x3be34e(0x131)][_0x3be34e(0x18c)])return _0x10e056['reply']({'embeds':[errorbed],'ephemeral':!![]});if(_0x10e056[_0x3be34e(0x178)]===_0x3be34e(0x1dc)){let _0x4468c8=Music[_0x3be34e(0x1c0)](_0x10e056);if(_0x4468c8[_0x3be34e(0x1c4)][_0x3be34e(0x196)]()[_0x3be34e(0x1b1)](_0x3be34e(0x16c)))return _0x10e056[_0x3be34e(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music[_0x3be34e(0x1c2)](_0x10e056,_0x4468c8[_0x3be34e(0x1c4)]+0x5);let _0x3e2545=Music['getQueue'](_0x10e056);const _0x2a8840=new Discord['MessageEmbed']()['setColor']('RANDOM')[_0x3be34e(0x1db)](_0x3be34e(0x176)+_0x1dc956['songs'][0x0][_0x3be34e(0x1d1)])[_0x3be34e(0x169)](_0x3be34e(0x11d)+_0x1dc956['volume']+_0x3be34e(0x1d3)+_0x1dc956[_0x3be34e(0x14e)]);await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x2a8840]});}if(_0x10e056[_0x3be34e(0x178)]===_0x3be34e(0x15a)){if(_0x1dc956['paused'])return;else{Music[_0x3be34e(0x15a)](_0x5ae95e);const _0x1c1e0d=new Discord[(_0x3be34e(0x128))]()['setColor'](_0x3be34e(0x17f))[_0x3be34e(0x1db)](_0x3be34e(0x176)+_0x1dc956[_0x3be34e(0x1a5)][0x0][_0x3be34e(0x1d1)])['setTitle']('Now\x20Playing\x20-\x20'+_0x1dc956[_0x3be34e(0x1a5)][0x0]['name'])[_0x3be34e(0x169)]('**Music\x20Control\x20Panel**\x20\x0a\x20Volume\x20:\x20'+_0x1dc956[_0x3be34e(0x1c4)]+'\x0a\x20Paused?\x20:\x20'+_0x1dc956[_0x3be34e(0x14e)]);await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x1c1e0d]});}}if(_0x10e056[_0x3be34e(0x178)]==='play'){if(_0x1dc956[_0x3be34e(0x14e)]){Music[_0x3be34e(0x126)](_0x5ae95e);const _0x58b98e=new Discord['MessageEmbed']()[_0x3be34e(0x10f)](_0x3be34e(0x17f))[_0x3be34e(0x169)](_0x3be34e(0x11d)+_0x1dc956[_0x3be34e(0x1c4)]+_0x3be34e(0x1d3)+_0x1dc956[_0x3be34e(0x14e)])[_0x3be34e(0x1db)](_0x3be34e(0x176)+_0x1dc956[_0x3be34e(0x1a5)][0x0]['name']);await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x58b98e]});}else return;}if(_0x10e056['customId']==='shuffle'){if(_0x1dc956[_0x3be34e(0x1a5)][_0x3be34e(0x159)]===0x1)return _0x5ae95e['followUp']({'embeds':[errorbed],'ephemeral':!![]});Music[_0x3be34e(0x12c)](_0x5ae95e);const _0x3df9c3=new Discord['MessageEmbed']()[_0x3be34e(0x10f)](_0x3be34e(0x17f))[_0x3be34e(0x169)]('**Music\x20Control\x20Panel**\x20\x0a\x20Volume\x20:\x20'+_0x1dc956['volume']+_0x3be34e(0x1d3)+_0x1dc956['paused'])[_0x3be34e(0x1db)](_0x3be34e(0x176)+_0x1dc956[_0x3be34e(0x1a5)][0x0]['name'])[_0x3be34e(0x1df)](_0x3be34e(0x194));await _0x10e056['update']({'embeds':[_0x3df9c3]}),_0x5ae95e['followUp']({'content':'Queue\x20is\x20now\x20shuffled!','ephemeral':!![]});}if(_0x10e056[_0x3be34e(0x178)]===_0x3be34e(0x1b3)){const _0x1f7f31=new Discord['MessageEmbed']()[_0x3be34e(0x10f)](_0x3be34e(0x17f))[_0x3be34e(0x169)](_0x3be34e(0x11d)+_0x1dc956['volume']+_0x3be34e(0x1d3)+_0x1dc956[_0x3be34e(0x14e)])[_0x3be34e(0x1db)](_0x3be34e(0x176)+_0x1dc956['songs'][0x0]['name'])[_0x3be34e(0x1df)](_0x3be34e(0x189)+_0x10e056[_0x3be34e(0x1e3)][_0x3be34e(0x158)]);await _0x10e056['update']({'embeds':[_0x1f7f31]}),_0x5ae95e[_0x3be34e(0x138)]({'content':_0x3be34e(0x118),'ephemeral':!![]});}if(_0x10e056[_0x3be34e(0x178)]===_0x3be34e(0x1cc)){Music[_0x3be34e(0x195)](_0x5ae95e);const _0x25368e=new Discord['MessageEmbed']()['setColor'](_0x3be34e(0x193))[_0x3be34e(0x169)](_0x3be34e(0x10d)+Client[_0x3be34e(0x1e3)][_0x3be34e(0x158)]+(_0x3be34e(0x106)+_0x10e056[_0x3be34e(0x1e3)]['username']));await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x25368e],'components':[_0xeccf7f]}),_0x5ae95e[_0x3be34e(0x138)]({'content':_0x3be34e(0x135),'ephemeral':!![]});}if(_0x10e056[_0x3be34e(0x178)]==='skip'){if(_0x1dc956[_0x3be34e(0x1a5)][_0x3be34e(0x159)]===0x1)return _0x5ae95e[_0x3be34e(0x138)]({'embeds':[errorbed],'ephemeral':!![]});try{Music[_0x3be34e(0x110)](_0x5ae95e);const _0x27fa7a=new Discord[(_0x3be34e(0x128))]()[_0x3be34e(0x10f)]('RANDOM')[_0x3be34e(0x169)](_0x3be34e(0x11d)+_0x1dc956[_0x3be34e(0x1c4)]+_0x3be34e(0x1d3)+_0x1dc956[_0x3be34e(0x14e)])['setTitle'](_0x3be34e(0x176)+_0x1dc956[_0x3be34e(0x1a5)][0x0]['name']);await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x27fa7a]});}catch(_0x1122c5){console['log'](_0x1122c5);}}if(_0x10e056['customId']===_0x3be34e(0x146)){let _0x2fd14d=Music[_0x3be34e(0x1c0)](_0x10e056);if(_0x2fd14d[_0x3be34e(0x1c4)]<0x5)return _0x10e056[_0x3be34e(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music[_0x3be34e(0x1c2)](_0x10e056,_0x2fd14d[_0x3be34e(0x1c4)]-0x5);let _0x5263dd=Music[_0x3be34e(0x1c0)](_0x10e056);const _0x2f3993=new Discord['MessageEmbed']()['setColor']('RANDOM')[_0x3be34e(0x169)](_0x3be34e(0x11d)+_0x1dc956[_0x3be34e(0x1c4)]+_0x3be34e(0x1d3)+_0x1dc956[_0x3be34e(0x14e)])[_0x3be34e(0x1db)]('Now\x20Playing\x20-\x20'+_0x1dc956[_0x3be34e(0x1a5)][0x0][_0x3be34e(0x1d1)]);await _0x10e056[_0x3be34e(0x1a6)]({'embeds':[_0x2f3993]});}});}if(_0x5ae95e[_0x48dfbb(0x14c)]==='skip'){if(!_0x5ae95e[_0x48dfbb(0x107)]['voice'][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e['guild']['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e['member'][_0x48dfbb(0x131)]['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)]['channel'])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});let _0x5f41ae=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0x5f41ae)_0x5ae95e[_0x48dfbb(0x138)]({'content':_0x48dfbb(0x117),'ephemeral':!![]});if(_0x5f41ae[_0x48dfbb(0x1a5)]['length']===0x1)return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});try{Music['skip'](_0x5ae95e);const _0x4e4df4=new Discord[(_0x48dfbb(0x128))]()['setColor']('RANDOM')[_0x48dfbb(0x169)](_0x48dfbb(0x1ad));_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x4e4df4]});}catch(_0x44bf77){return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});}}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x1b7)){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)]['voice']['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me']['voice'][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});let _0xb51e0c=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0xb51e0c)_0x5ae95e[_0x48dfbb(0x138)]({'content':_0x48dfbb(0x117),'ephemeral':!![]});try{const _0x23af52=Music[_0x48dfbb(0x182)](_0x5ae95e,_0x5ae95e[_0x48dfbb(0x139)]['getString'](_0x48dfbb(0x1b7))),_0x145c7e=new Discord['MessageEmbed']()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))['setDescription']('**Filter:\x20'+_0x23af52+'**');_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x145c7e]});}catch(_0x58a6b9){return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]}),conosle[_0x48dfbb(0x16b)](_0x58a6b9);}}if(_0x5ae95e['commandName']==='queue'){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)]===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)]['channel'])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});const _0xf993c1=Music[_0x48dfbb(0x1c0)](_0x5ae95e);if(!_0xf993c1)_0x5ae95e[_0x48dfbb(0x138)]({'content':_0x48dfbb(0x117),'ephemeral':!![]});if(!_0xf993c1)return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});const _0x4f81bf=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))['setTitle'](_0x48dfbb(0x1bd))[_0x48dfbb(0x169)](''+_0xf993c1['songs'][_0x48dfbb(0x168)]((_0x12726e,_0x14cfdf)=>'['+_0x12726e['name']+']('+_0x12726e[_0x48dfbb(0x1ac)]+')')[_0x48dfbb(0x13d)](0x0,0xa)[_0x48dfbb(0x1ce)]('\x0a'));_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x4f81bf]});}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x195)){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)]['channel'])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)]['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});const _0x2192ad=Music['getQueue'](_0x5ae95e);if(!_0x2192ad['playing'])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music['stop'](_0x5ae95e);const _0x23ca16=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))['setDescription'](_0x48dfbb(0x1bf));_0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x23ca16]});}if(_0x5ae95e[_0x48dfbb(0x14c)]===_0x48dfbb(0x12c)){if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});if(!_0x5ae95e[_0x48dfbb(0x107)][_0x48dfbb(0x131)]['channel']===_0x5ae95e[_0x48dfbb(0x12e)]['me'][_0x48dfbb(0x131)][_0x48dfbb(0x18c)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});const _0x167f92=Music['getQueue'](_0x5ae95e);if(!_0x167f92[_0x48dfbb(0x1b5)])return _0x5ae95e['reply']({'embeds':[errorbed],'ephemeral':!![]});if(_0x167f92[_0x48dfbb(0x1a5)][_0x48dfbb(0x159)]===0x1)return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[errorbed],'ephemeral':!![]});Music[_0x48dfbb(0x12c)](_0x5ae95e);const _0x2b09bf=new Discord[(_0x48dfbb(0x128))]()[_0x48dfbb(0x10f)](_0x48dfbb(0x17f))[_0x48dfbb(0x169)](_0x48dfbb(0x13a));return _0x5ae95e[_0x48dfbb(0x12a)]({'embeds':[_0x2b09bf]});}}}),Music['on'](_0x52d54a(0x1b4),(_0x5c0d46,_0x284a40)=>{const _0x43f4df=_0x52d54a,_0x2154fb=new Discord[(_0x43f4df(0x128))]()[_0x43f4df(0x10f)](_0x43f4df(0x17f))[_0x43f4df(0x1c7)](_0x284a40[_0x43f4df(0x140)])[_0x43f4df(0x1c6)]('Now\x20Playing',_0x43f4df(0x16e))['setTitle'](_0x284a40[_0x43f4df(0x1d1)])['setURL'](_0x284a40[_0x43f4df(0x1ac)])[_0x43f4df(0x136)](_0x43f4df(0x105),_0x284a40[_0x43f4df(0x1b8)],!![])[_0x43f4df(0x136)](_0x43f4df(0x113),_0x284a40['user'][_0x43f4df(0x158)],!![]);_0x5c0d46[_0x43f4df(0x156)][_0x43f4df(0x1af)]({'embeds':[_0x2154fb]});}),Music['on'](_0x52d54a(0x1a9),(_0x43c4e2,_0x48daa5)=>{const _0x201965=_0x52d54a,_0x3e5b1b=new Discord[(_0x201965(0x128))]()[_0x201965(0x10f)](_0x201965(0x17f))[_0x201965(0x1c7)](_0x48daa5[_0x201965(0x140)])[_0x201965(0x1c6)](_0x201965(0x1dd),_0x201965(0x16e))[_0x201965(0x1db)](_0x48daa5[_0x201965(0x1d1)])[_0x201965(0x15d)](_0x48daa5[_0x201965(0x1ac)])[_0x201965(0x136)](_0x201965(0x105),_0x48daa5['formattedDuration'],!![])[_0x201965(0x136)](_0x201965(0x113),_0x48daa5[_0x201965(0x1e3)][_0x201965(0x158)],!![]);_0x43c4e2[_0x201965(0x156)][_0x201965(0x1af)]({'embeds':[_0x3e5b1b]});}),Music['on'](_0x52d54a(0x10c),(_0x2bd840,_0x2fc7c4)=>{const _0x5cd75a=_0x52d54a;return console[_0x5cd75a(0x16b)](_0x2fc7c4);}),Client['login'](config[_0x52d54a(0x13b)]);
+
+console.log(process.version)
+const Discord = require('discord.js');
+const Client = new Discord.Client({ intents: 32767 , partials: ['CHANNEL','USER' , 'GUILD_MEMBER' , 'REACTION'] , allowedMentions: ['']});
+const config = require('./config.json');
+const Axios = require('axios');
+const Paginator = require('@koenie06/discord.js-pagination');
+const DisTube = require('distube');
+const Voice = require('@discordjs/voice');
+
+
+const Errorhandler = require('discord-error-handler')
+
+process.on('TypeError', error => {
+ console.log(error)
+})
+
+const Lyrics = require('lyrics-finder');
+
+
+const Music = new DisTube.default(Client,
+  {
+    leaveOnEmpty: false,
+    emptyCooldown: 0,
+    leaveOnFinish: false,
+    leaveOnStop: true,
+  });
+
+const errorbed = new Discord.MessageEmbed()
+  .setColor('RANDOM')
+  .setDescription('**An Error Occured! Please try again**');
+
+const help$ =
+{
+  name: 'help',
+  description: 'Need Some Help?'
+}
+
+const play$ =
+{
+  name: 'play',
+  description: 'Play A Song'
+}
+
+const pause$ = 
+{
+  name: 'pause',
+  description: 'Pause Song'
+}
+
+const resume$ = 
+{
+  name: 'resume',
+  description: 'Resume Song'
+}
+
+const volume$ = 
+{
+  name: 'volume',
+  description: 'Set Song Volume'
+}
+
+const skip$ = 
+{
+  name: 'skip',
+  description: 'Skip Song'
+}
+
+const filter$ = 
+{
+  name: 'filter',
+  description: 'Add Song Filter',
+  options: [{
+    name: 'filter',
+    description: 'The Filter To Set',
+    required: true,
+    type: 'STRING',
+    choices: [{name: '3d' , value: '3d'},{name: 'nightcore' , value: 'nightcore'},{name: 'karaoke' , value: 'karaoke'},{name: 'echo' , value: 'echo'},{name: 'bassboost' , value: 'bassboost'} , {name: 'vaporwave' , value: 'vaporwave'},{name: 'flanger' , value: 'flanger'},{name: 'reverse' , value: 'reverse'},{name: 'phaser' , value: 'phaser'},{name: 'tremolo' , value: 'tremolo'}]
+  }],
+}
+
+const queue$ = 
+{
+  name: 'queue',
+  description: 'See Songs Queue'
+}
+
+const stop$ = 
+{
+  name: 'stop',
+  description: 'Stop Music'
+}
+
+const shuffle$ = 
+{
+  name: 'shuffle',
+  description: 'Shuffle Queue Songs'
+}
+
+const panel$ = 
+{
+  name: 'panel',
+  description: 'Music Control Panel'
+}
+const lyrics$ = 
+{
+  name: 'lyrics',
+  description: 'See song lyrics',
+   options: [{
+    name: 'name',
+    description: 'What is the name of the song',
+    required: true,
+    type: 'STRING',
+    
+  },{
+    name: 'author',
+    description: 'What is the name of the song author',
+    required: true,
+    type: 'STRING',
+    
+  }],
+}
+const grab$ = 
+{
+  name: 'grab',
+  description: 'Save this song to your DMs'
+}
+
+//done, what a poopi error
+
+
+//check discord lol
+
+Client.on('ready', async () => 
+{
+  const activities = [
+    `${config.status1}`,
+  `${config.status2}`,
+  `${config.status3}`,
+  `${config.status4}`,
+  `${config.status5}`,
+  `${config.status6}`,
+  `${config.status7}`,
+  `${config.status8}`,
+  `${config.status9}`,
+  `${config.status10}`,
+  `${config.status11}`,
+  `code by Nishant#8044`,
+  `${config.status12}` 
+  ]
+  //amazing time to run
+    let i = 0;
+  setInterval(() => Client.user.setActivity(`${activities[i++ % activities.length]}`, { type: `LISTENING` }), 9000);
+  Client.guilds.cache.get('890487719619330048')?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);
+  Client.application.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);
+  Client.user.setStatus('idle');
+  console.log(`🚀 ${Client.user.username} Is Online 🚀`);
+});
+
+Client.on('guildCreate' , async guild => 
+{
+  guild.channels.cache.filter(chan => chan.type === 'GUILD_TEXT').first().createInvite().then(inv => 
+  {
+    const embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .addField('Guild Name','```' + guild.name + '```',true)
+    .addField('Guild ID','```' + guild.id + '```',true)
+    .addField('Guild Owner','```' + Client.users.cache.get(guild.ownerId).tag + '```',true)
+  
+    .addField('Guild Invite',`[Click Here](${inv.url})`,true)
+    Client.channels.cache.get(config.guildjoinlog).send({embeds: [embed]});
+  })
+});
+
+Client.on('messageCreate', async message => 
+{
+  const owneruser = Client.users.cache.get(config.ownerId)
+  if(message.author.bot) return;
+  if(message.mentions.users.first() === Client.user)
+  {
+    const row = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+    .setStyle('LINK')
+    .setURL(`https://discord.com/oauth2/authorize?client_id=${Client.user.id}&permissions=8&scope=bot%20applications.commands`)
+    .setLabel('Invite Me'));
+    const embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .setTitle('About Me')
+    .setAuthor(`${Client.user.username}`,Client.user.displayAvatarURL({ size: 1024, dynamic: true }))
+    .setDescription(`${Client.user.username} is a high quality Music bot.\nUse **/help** to get started\n\nThis bot's owner is ${owneruser.username}`)
+    message.reply({embeds: [embed] , components: [row]});
+  }
+  if(!message.author.id === owneruser.id) return;
+  if(message.author.id === owneruser.id)
+  {
+    if(message.content.startsWith('e '))
+    {
+      const code = message.content.replace('e ','');
+      try
+      {
+        let evaled = eval(code);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('```js\n' + evaled + '\n```');
+        message.reply({embeds: [embed]});
+      }
+      catch(err)
+      {
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('```js\n' + err + '\n```');
+        message.reply({embeds: [embed]});
+      }
+    }
+  }
+  else
+  {
+    return;
+  }
+});
+
+Client.on('interactionCreate', async interaction => 
+{
+  const owneruser = Client.users.cache.get(config.ownerId)
+  
+  if (interaction.isCommand()) 
+  {
+    if (interaction.commandName === 'help') 
+    {
+      const embed1 = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setTitle('Welcome to '+ Client.user.username+`\nThis is an amazing music bot, created for listening to high quality music! It has multiple commands and can even play in STAGE channels!\n\nOwner : ${owneruser.username}\nBot Code Creator : Nishant#8044\nBot Code : [HERE](https://github.com/NishantMajumdar2/musicBot)`)
+        
+        .setFooter('Page 1/2');
+      const embed2 = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setTitle('Music Commands')
+        
+        .addField('play', '`↪ Plays A Song`', true)
+        .addField('pause', '`↪ Pauses A Song`', true)
+        .addField('resume', '`↪ Resumes A Song`', true)
+        .addField('volume', '`↪ Sets Song Volume`', true)
+        .addField('skip', '`↪ Skip A Song`', true)
+        .addField('filter', '`↪ Add Song Filter`', true)
+        .addField('queue', '`↪ See Songs Queue`', true)
+        .addField('shuffle', '`↪ Shuffle Queue`', true)
+        .addField('panel', '`↪ Song Control Panel`', true)
+         .addField('grab', '`↪ Save song to DM`', true)
+          .addField('lyrics', '`↪ Get Song lyrics`', true)
+        .addField('stop', '`↪ Stop Music`', true)
+        .setFooter('Page 2/2');
+     
+      Paginator.button({
+        interaction: interaction,
+        pages: [embed1, embed2],
+        buttons:
+        {
+          previous:
+          {
+            label: 'Previous',
+            style: 'PRIMARY',
+            emoji: '👈'
+          },
+          next:
+          {
+            label: 'Next',
+            style: 'PRIMARY',
+            emoji: '👉'
+          },
+          stop:
+          {
+            label: 'Stop',
+            style: 'DANGER',
+            emoji: '✋'
+          }
+        },
+      });
+    }
+    if (interaction.commandName === 'grab') 
+    {
+      let queue = Music.getQueue(interaction);
+      if(!queue) {
+        
+        interaction.reply({content:"Please play music before running this command", ephemeral:true})
+        
+        }else{
+      const grabe = new Discord.MessageEmbed()
+      .setTitle(`${queue.songs[0].name}`).addField('Duration',`${queue.songs[0].formattedDuration}`,true)
+      .addField('Views',`${queue.songs[0].views}`,true)
+      .addField('ID',`${queue.songs[0].id}`,true).setFooter(`Likes : ${queue.songs[0].likes}     |    Dislikes : ${queue.songs[0].dislikes}`).setURL(`${queue.songs[0].url}`).setThumbnail(`${queue.songs[0].thumbnail}`).setColor('RANDOM')
+      interaction.reply({content:"Check your DMs",ephemeral:true})
+      interaction.user.send({embeds:[grabe]})
+    }}
+    if (interaction.commandName === 'play') 
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      try 
+      {
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('**To play a song, type its name below**');
+        interaction.reply({embeds: [embed]});
+        const filter = m => m.member.id === interaction.member.id;
+        const collector = interaction.channel.createMessageCollector({ filter, time: 15000 });
+        collector.on('collect', async m => 
+        {
+          if(!m.member.voice.channel) return;
+          Music.play(m,m.content);
+          collector.stop();
+        });
+      }
+      catch (err) 
+      {
+        return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      }
+    }
+    if (interaction.commandName === 'pause')
+    {
+       let queue = Music.getQueue(interaction);
+      if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+     
+     
+      if(queue.paused)
+      {
+        return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      }
+      else
+      {
+        Music.pause(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('**Music playing right now is paused**');
+        interaction.reply({embeds: [embed]});
+      }
+    }
+    if(interaction.commandName === 'resume')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      let queue = Music.getQueue(interaction);
+
+        if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      if(queue.paused)
+      {
+        Music.resume(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('**Music playing right now is Resumed**');
+        interaction.reply({embeds: [embed]});
+      }
+      else
+      {
+        return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      }
+    }
+    if(interaction.commandName === 'lyrics')
+    { const _ = require("lodash");
+      let pages = []
+       interaction.reply({content:"LYRICS PANEL OPENED",ephemeral:true})
+      let current = 0
+
+      let queue = Music.getQueue(interaction);
+      let song = interaction.options.getString("song")
+      let author = interaction.options.getString("author")
+
+      let res = await Lyrics(author, song) || "Not Found!";
+      for(let i = 0; i < res.length; i += 2048) {
+        let lyrics = res.substring(i, Math.min(res.length, i + 2000 ))
+        let page = new Discord.MessageEmbed()
+        .setDescription(lyrics)
+        pages.push(page)
+    }
+
+     const filter2 = (reaction, user) => ['⬅️', '➡️'].includes(reaction.emoji.name) && (interaction.user.id == user.id)
+    
+    let Embed = await interaction.channel.send({content:`Page: ${current+1}/${pages.length}`,embeds:[ pages[current]]})
+    
+    await Embed.react('🇱')
+    await Embed.react('🇾')
+    await Embed.react('🇷')
+    await Embed.react('🇮')
+    await Embed.react('🇨')
+    await Embed.react('🇸')
+    await Embed.react('🇸')
+    await Embed.react('⬅️')
+    await Embed.react('➡️')
+    await Embed.react('➡️')
+    await Embed.react('❌')
+    await Embed.react('❌')
+    let ReactionCol = Embed.createReactionCollector(filter2)
+
+    ReactionCol.on("collect", (reaction, user) => {
+        reaction.users.remove(reaction.users.cache.get(interaction.user.id))
+
+        if(reaction.emoji.name == '➡️') {
+            if(current < pages.length - 1) {
+                current += 1
+                Embed.edit({content:`Page: ${current+1}/${pages.length}`,embeds:[pages[current]]})
+            }
+        } else  {
+            if(reaction.emoji.name === '⬅️') {
+                if(current !== 0) {
+                    current -= 1
+                    Embed.edit({content:`Page: ${current+1}/${pages.length}`,embeds: [pages[current]]})
+                }
+            }else
+            if(reaction.emoji.name === '❌') {
+                
+                    current -= 1
+                    Embed.edit({content:`Closed LYRICS panel`,embeds: []})
+                
+            }
+        }
+    })
+
+      
+        
+      
+    }
+    if(interaction.commandName === 'volume')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      let queue = Music.getQueue(interaction);
+       if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      const row = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('vol_down')
+      .setStyle('PRIMARY')
+      .setEmoji('🔈'),new Discord.MessageButton()
+      .setCustomId('vol_up')
+      .setStyle('PRIMARY')
+      .setEmoji('🔊'))
+      const embed = new Discord.MessageEmbed()
+      .setColor('RANDOM')
+      .setDescription('**Volume: ' + queue.volume + '%**')
+      interaction.reply({embeds: [embed] , components: [row]});
+      const filter = i => i.member.id === interaction.member.id;
+      const collector = interaction.channel.createMessageComponentCollector({ filter, time: 400000 });
+      collector.on('collect', async i => 
+      {
+        if(!i.member.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if(!i.guild.me.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if(!i.member.voice.channel === interaction.guild.me.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if (i.customId === 'vol_up') 
+        {
+          let queue1 = Music.getQueue(i);
+          if(queue1.volume.toString().startsWith('150')) return i.reply({ embeds: [errorbed], ephemeral: true });
+          Music.setVolume(i,queue1.volume + 5);
+          let queue2 = Music.getQueue(i);
+          const embed1 = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setDescription('**Volume: ' + queue2.volume + '%**')
+          await i.update({embeds: [embed1]});
+        }
+        if(i.customId === 'vol_down')
+        {
+          let queue1 = Music.getQueue(i);
+          if(queue1.volume < 5) return i.reply({ embeds: [errorbed], ephemeral: true });
+          Music.setVolume(i,queue1.volume - 5);
+          let queue2 = Music.getQueue(i);
+          const embed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setDescription('**Volume: ' + queue2.volume + '%**')
+          await i.update({embeds: [embed]});
+        }
+      });
+    }
+    if(interaction.commandName === 'panel')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      let queue = Music.getQueue(interaction);
+      if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      const row = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('n1')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled(),new Discord.MessageButton()
+      .setCustomId('vol_down')
+      .setStyle('PRIMARY')
+      .setEmoji('🔈'),new Discord.MessageButton()
+      .setCustomId('vol_up')
+      .setStyle('PRIMARY')
+      .setEmoji('🔊'),new Discord.MessageButton()
+      .setCustomId('n8')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled())
+   const row2 = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('n4')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled(),new Discord.MessageButton()
+      .setCustomId('pause')
+      .setStyle(4)
+      .setEmoji('⏸️'),new Discord.MessageButton()
+      .setCustomId('play')
+      .setStyle('SUCCESS')
+      .setEmoji('▶️'),new Discord.MessageButton()
+      .setCustomId('n2')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled())
+      const stoprow = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('ne22')
+      .setStyle('SECONDARY')
+      .setLabel('Thanks').setDisabled(),new Discord.MessageButton()
+      .setCustomId('n2234')
+      .setStyle('SECONDARY')
+      .setLabel('For').setDisabled(),new Discord.MessageButton()
+      .setCustomId('n2324')
+      .setStyle('SECONDARY')
+      .setLabel('Using').setDisabled(),new Discord.MessageButton()
+      .setCustomId('n24442')
+      .setStyle('SECONDARY')
+      .setLabel(`${Client.user.username}`).setDisabled())
+      const row3 = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('n3')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled(),new Discord.MessageButton()
+      .setCustomId('skip')
+      .setStyle(2)
+      .setEmoji('⏩'),new Discord.MessageButton()
+      .setCustomId('shuffle')
+      .setStyle(2)
+      .setEmoji('🔃'),new Discord.MessageButton()
+      .setCustomId('n5')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled())
+       const row4 = new Discord.MessageActionRow().addComponents(new Discord.MessageButton()
+      .setCustomId('n90')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled(),new Discord.MessageButton()
+      .setCustomId('stop2')
+      .setStyle(4)
+      .setEmoji('🛑'),new Discord.MessageButton()
+      .setCustomId('refresh')
+      .setStyle('SUCCESS')
+      .setEmoji('🔄'),new Discord.MessageButton()
+      .setCustomId('n524')
+      .setStyle('SECONDARY')
+      .setLabel('\u200b').setDisabled())
+      
+      
+      const embed = new Discord.MessageEmbed()
+      .setColor('RANDOM')
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+      .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+queue.paused)
+      interaction.reply({embeds: [embed] , components: [row,row2,row3,row4]});
+      const filter = i => i.member.id === interaction.member.id;
+      const collector = interaction.channel.createMessageComponentCollector({ filter, time: 400000 });
+      collector.on('collect', async i => 
+      {
+        if(!i.member.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if(!i.guild.me.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if(!i.member.voice.channel === interaction.guild.me.voice.channel) return i.reply({ embeds: [errorbed], ephemeral: true });
+        if (i.customId === 'vol_up') 
+        {
+          let queue1 = Music.getQueue(i);
+          if(queue1.volume.toString().startsWith('150')) return i.reply({ embeds: [errorbed], ephemeral: true });
+          Music.setVolume(i,queue1.volume + 5);
+          let queue2 = Music.getQueue(i);
+          const embed1 = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setTitle(`Now Playing - ${queue.songs[0].name}`)
+          .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+          await i.update({embeds: [embed1]});
+        }
+         if (i.customId === 'pause') 
+        {
+          if(queue.paused){
+            return 
+          }else{
+          Music.pause(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setTitle(`Now Playing - ${queue.songs[0].name}`)
+        .setTitle(`Now Playing - ${queue.songs[0].name}`)
+       .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+       await i.update({embeds: [embed]});}
+        }
+          if (i.customId === 'play') 
+        {
+          if(queue.paused){
+             Music.resume(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+       .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+       await i.update({embeds: [embed]});
+          }else{
+            return
+         }
+        }
+         if (i.customId === 'shuffle') 
+        {
+           if(queue.songs.length === 1) return interaction.followUp({ embeds: [errorbed], ephemeral: true });
+             Music.shuffle(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+       .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+      .setFooter("Log: Queue Shuffled")
+       await i.update({embeds: [embed]});
+       interaction.followUp({content: "Queue is now shuffled!", ephemeral: true})
+         
+        }
+        if (i.customId === 'refresh') 
+        {
+        
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+       .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+      .setFooter("Log: Refreshed, by " + i.user.username)
+       await i.update({embeds: [embed]});
+       interaction.followUp({content: "Refreshed the panel", ephemeral: true})
+         
+        }
+        if (i.customId === 'stop2') 
+        {
+         Music.stop(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RED')
+       .setDescription('Thanks for using '+ Client.user.username + `\n The music was stopped by ${i.user.username}`)
+      
+       await i.update({embeds: [embed], components: [stoprow]});
+       interaction.followUp({content: "Music Stopped", ephemeral: true})
+         
+        }
+        if (i.customId === 'skip') 
+        {
+           if(queue.songs.length === 1) return interaction.followUp({ embeds: [errorbed], ephemeral: true });
+        try{
+             Music.skip(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+       .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+       await i.update({embeds: [embed]});
+        }catch(err){
+          console.log(err)
+        }
+        }
+        if(i.customId === 'vol_down')
+        {
+          let queue1 = Music.getQueue(i);
+          if(queue1.volume < 5) return i.reply({ embeds: [errorbed], ephemeral: true });
+          Music.setVolume(i,queue1.volume - 5);
+          let queue2 = Music.getQueue(i);
+          const embed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+         .setDescription('**Music Control Panel** \n Volume : ' + queue.volume + 
+      "\n Paused? : "+ queue.paused)
+      .setTitle(`Now Playing - ${queue.songs[0].name}`)
+          await i.update({embeds: [embed]});
+        }
+      });
+    }
+    if(interaction.commandName === 'skip')
+    {
+
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      let queue = Music.getQueue(interaction);
+       if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      if(queue.songs.length === 1) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      try
+      {
+        Music.skip(interaction);
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('**Skipped current Song**');
+        interaction.reply({embeds: [embed]});
+      }
+      catch(err)
+      {
+        return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      }
+    }
+    if(interaction.commandName === 'filter')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      let queue = Music.getQueue(interaction);
+        if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      try
+      {
+        const filt = Music.setFilter(interaction,interaction.options.getString('filter'))
+        const embed = new Discord.MessageEmbed()
+        .setColor('RANDOM')
+        .setDescription('**Filter: ' + filt + '**');
+        interaction.reply({embeds: [embed]});
+      }
+      catch(err)
+      {
+        return interaction.reply({ embeds: [errorbed], ephemeral: true });
+        conosle.log(err)
+      }
+    }
+    if(interaction.commandName === 'queue')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      const queue = Music.getQueue(interaction);
+      if(!queue) interaction.followUp({content:"Please play music before running this command", ephemeral:true})
+      if(!queue) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      const embed = new Discord.MessageEmbed()
+      .setColor('RANDOM')
+      .setTitle('Current Queue of songs')
+      .setDescription(`${queue.songs.map((song , id) => `[${song.name}](${song.url})`).slice(0,10).join('\n')}`)
+      interaction.reply({embeds: [embed]});
+    }
+    if(interaction.commandName === 'stop')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      const queue = Music.getQueue(interaction);
+      if(!queue.playing)return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      Music.stop(interaction);
+      const embed = new Discord.MessageEmbed()
+      .setColor('RANDOM')
+      .setDescription('**Music Stopped**')
+      interaction.reply({embeds: [embed]});
+    }
+    if(interaction.commandName === 'shuffle')
+    {
+      if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(!interaction.member.voice.channel === interaction.guild.me.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+     
+      const queue = Music.getQueue(interaction);
+      if(!queue.playing)return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      if(queue.songs.length === 1) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+      Music.shuffle(interaction);
+      const embed = new Discord.MessageEmbed()
+      .setColor('RANDOM')
+      .setDescription('**Shuffled Songs Queue**');
+      return interaction.reply({embeds: [embed]});
+    }
+   
+   
+  
+  }
+  
+ 
+});
+
+Music.on('playSong', (queue, song) => {
+  const embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .setThumbnail(song.thumbnail)
+    .setAuthor('Now Playing', 'https://cdn.discordapp.com/attachments/873161348694048780/892310990056747028/855561346087387136.gif')
+    .setTitle(song.name)
+    .setURL(song.url)
+    .addField('Duration', song.formattedDuration, true)
+    .addField('Requestor', song.user.username, true);
+  queue.textChannel.send({ embeds: [embed] });
+});
+
+Music.on('addSong', (queue, song) => {
+  const embed = new Discord.MessageEmbed()
+    .setColor('RANDOM')
+    .setThumbnail(song.thumbnail)
+    .setAuthor('Added To Queue', 'https://cdn.discordapp.com/attachments/873161348694048780/892310990056747028/855561346087387136.gif')
+    .setTitle(song.name)
+    .setURL(song.url)
+    .addField('Duration', song.formattedDuration, true)
+    .addField('Requestor', song.user.username, true);
+  queue.textChannel.send({ embeds: [embed] });
+});
+
+Music.on('error' , (txt,e) => 
+{
+  return console.log(e);
+})
+
+
+
+Client.login(config.TOKEN);
