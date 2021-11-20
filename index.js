@@ -126,10 +126,6 @@ const grab$ =
   description: 'Save this song to your DMs'
 }
 
-//done, what a poopi error
-
-
-//check discord lol
 
 Client.on('ready', async () => 
 {
@@ -148,7 +144,7 @@ Client.on('ready', async () =>
   `code by Nishant#8044`,
   `${config.status12}` 
   ]
-  //amazing time to run
+  
     let i = 0;
   setInterval(() => Client.user.setActivity(`${activities[i++ % activities.length]}`, { type: `LISTENING` }), 9000);
   Client.guilds.cache.get('890487719619330048')?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);//your guild id here
