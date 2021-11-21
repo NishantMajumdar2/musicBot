@@ -17,7 +17,9 @@ Step 1 - Clone this repository using this command `git clone https://github.com/
 
 Step 2 - Fill in the details in <i>config.json</i>
 
-Step 3 - Type `npm start` to start this bot
+Step 3 - Type `npm install` to install required files
+
+Step 4 - Type `npm start` to start this bot
 
 
 YES, its that easy!
