@@ -125,7 +125,11 @@ const grab$ =
   name: 'grab',
   description: 'Save this song to your DMs'
 }
-
+const play1$ = 
+{
+  name: 'Play this Song',
+ type: 'MESSAGE'
+}
 
 Client.on('ready', async () => 
 {
@@ -147,7 +151,7 @@ Client.on('ready', async () =>
   
     let i = 0;
   setInterval(() => Client.user.setActivity(`${activities[i++ % activities.length]}`, { type: `LISTENING` }), 9000);
-  Client.guilds.cache.get('890487719619330048')?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);//your guild id here
+  Client.guilds.cache.get('912703509793751071')?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$,play1$]);//your guild id here
   Client.application.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);
   Client.user.setStatus('idle');
   console.log(`🚀 ${Client.user.username} Is Online 🚀`);
@@ -217,7 +221,18 @@ Client.on('messageCreate', async message =>
 Client.on('interactionCreate', async interaction => 
 {
   const owneruser = Client.users.cache.get(config.ownerId)
-  
+  if(interaction.isContextMenu()){
+ if (interaction.commandName === 'Play this Song') 
+    {
+        const msg = await interaction.channel.messages.fetch(
+         interaction.targetId
+         );
+          if(!interaction.member.voice.channel) return interaction.reply({ embeds: [errorbed], ephemeral: true });
+        console.log(interaction.member.voice.channel.name)
+        Music.playVoiceChannel(interaction.member.voice.channel,msg.content)
+        const e = new Discord.MessageEmbed().setTitle("Started Playing").setDescription(`${msg.content} is now playing in #${interaction.member.voice.channel.name}`).setColor('RANDOM');
+        interaction.reply({embeds:[e],ephemeral:true})
+  }}
   if (interaction.isCommand()) 
   {
     if (interaction.commandName === 'help') 
