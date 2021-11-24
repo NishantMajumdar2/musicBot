@@ -131,6 +131,7 @@ const play1$ =
  type: 'MESSAGE'
 }
 
+
 Client.on('ready', async () => 
 {
   const activities = [
@@ -151,7 +152,7 @@ Client.on('ready', async () =>
   
     let i = 0;
   setInterval(() => Client.user.setActivity(`${activities[i++ % activities.length]}`, { type: `LISTENING` }), 9000);
-  Client.guilds.cache.get('912703509793751071')?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$,play1$]);//your guild id here
+  Client.guilds.cache.get(config.guildId)?.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$,play1$]);//your guild id here
   Client.application.commands.set([help$, play$,pause$,resume$,volume$,skip$,filter$,queue$,stop$,shuffle$,panel$,lyrics$,grab$]);
   Client.user.setStatus('idle');
   console.log(`🚀 ${Client.user.username} Is Online 🚀`);
