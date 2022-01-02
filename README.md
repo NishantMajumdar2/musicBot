@@ -3,7 +3,7 @@
 Free MUSIC bot for Discord.JS v13
 
 With Slash commands and buttons
-
+ Made by Nishant Majumdar
 
 ISSUES? https://discord.gg/HVHj6YD5HN Join for support
 
