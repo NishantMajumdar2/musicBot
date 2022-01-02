@@ -75,3 +75,7 @@ Click this: https://replit.com/github/NishantMajumdar2/MusicBot
   
 </ol>
 Note: Bugs may occur. If they do, join support server!
+<br><br>
+
+Tutorial: https://www.youtube.com/watch?v=5I1P2FymmgM&t=123s
+![MVideo Thumbnail](https://i.ibb.co/3sRrRw4/template-1.png "Tutorial Video")
